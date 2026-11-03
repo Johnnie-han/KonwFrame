@@ -1,0 +1,166 @@
+{
+  "fixtureVersion": 1,
+  "project": {
+    "name": "为什么天空是蓝色？",
+    "document": {
+      "schemaVersion": 1,
+      "settings": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30
+      },
+      "theme": {
+        "background": "#0B1020",
+        "accent": "#67D8FF",
+        "fontId": "bundled-cjk"
+      },
+      "scenes": [
+        {
+          "id": "scene_intro",
+          "templateId": "title",
+          "title": "为什么天空是蓝色？",
+          "body": "从阳光和空气说起",
+          "narrationText": "抬头看天空，你有没有想过，它为什么常常是蓝色的？我们从阳光说起。",
+          "durationFrames": 180,
+          "imageAssetId": "asset_sunlight",
+          "voiceover": null
+        },
+        {
+          "id": "scene_sunlight",
+          "templateId": "knowledge",
+          "title": "阳光包含不同颜色",
+          "body": "看似白色的阳光，包含多种可见光。",
+          "narrationText": "太阳光看起来接近白色，其中却包含不同颜色的光。蓝光和红光，波长并不一样；蓝光的波长更短。",
+          "durationFrames": 360,
+          "imageAssetId": "asset_sunlight",
+          "voiceover": null
+        },
+        {
+          "id": "scene_scattering",
+          "templateId": "knowledge",
+          "title": "空气会让光发生散射",
+          "body": "空气分子更容易散射较短波长的蓝光。",
+          "narrationText": "阳光进入大气后，会被空气分子散射到不同方向。相比红光，蓝光更容易被散射。于是，我们望向远离太阳的天空时，接收到许多散射来的蓝光。",
+          "durationFrames": 540,
+          "imageAssetId": "asset_scattering",
+          "voiceover": null
+        },
+        {
+          "id": "scene_sunset",
+          "templateId": "knowledge",
+          "title": "日落为什么偏红？",
+          "body": "阳光穿过更长的大气路径，直射光的颜色发生变化。",
+          "narrationText": "日落时，太阳光穿过大气的路径更长，更多蓝光被散射离开直射方向。抵达眼睛的直射光，就更偏红色和橙色。",
+          "durationFrames": 480,
+          "imageAssetId": "asset_sunset",
+          "voiceover": null
+        },
+        {
+          "id": "scene_summary",
+          "templateId": "summary",
+          "title": "记住这条线索",
+          "body": "阳光的颜色组成 + 空气散射 = 常见天空颜色的线索",
+          "narrationText": "理解天空的颜色，要同时看阳光包含什么颜色，以及大气怎样散射这些光。",
+          "durationFrames": 240,
+          "imageAssetId": null,
+          "voiceover": null
+        }
+      ],
+      "music": {
+        "assetId": "asset_test_music",
+        "sourceStartSample": 0,
+        "durationSamples": 1440000,
+        "gainDb": -18
+      }
+    }
+  },
+  "assetManifest": [
+    {
+      "id": "asset_sunlight",
+      "kind": "image",
+      "role": "illustration",
+      "status": "ready",
+      "sourceFile": "assets/sunlight.png",
+      "metadata": {
+        "width": 1080,
+        "height": 720
+      },
+      "byteSize": 44167,
+      "sha256": "658e9de8caac02f1c4cec82e6618eff89421a2b9ddf84881678253ca4ddf202d",
+      "provenance": "Original procedural fixture; no third-party media."
+    },
+    {
+      "id": "asset_scattering",
+      "kind": "image",
+      "role": "illustration",
+      "status": "ready",
+      "sourceFile": "assets/scattering.png",
+      "metadata": {
+        "width": 1080,
+        "height": 720
+      },
+      "byteSize": 54539,
+      "sha256": "deaa93d60b2492af7d10a8b16420c894b1bafb0ccb6cca45d222779f9828c8fc",
+      "provenance": "Original procedural fixture; no third-party media."
+    },
+    {
+      "id": "asset_sunset",
+      "kind": "image",
+      "role": "illustration",
+      "status": "ready",
+      "sourceFile": "assets/sunset.png",
+      "metadata": {
+        "width": 1080,
+        "height": 720
+      },
+      "byteSize": 58340,
+      "sha256": "6d4180afd9ed778fa2f78dd02d0a4501cbcdaf64dea894330b8c580622262425",
+      "provenance": "Original procedural fixture; no third-party media."
+    },
+    {
+      "id": "asset_test_music",
+      "kind": "audio",
+      "role": "synthetic-test-music",
+      "status": "ready",
+      "sourceFile": "assets/test-music-120bpm-60s.wav",
+      "metadata": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "durationSamples": 1440000
+      },
+      "byteSize": 2880044,
+      "sha256": "df3c706938f648d59bdbfe271056296cb568003892bd21b14ffc0935bc3ed8f7",
+      "provenance": "Original procedural fixture; no third-party media."
+    },
+    {
+      "id": "asset_test_cue",
+      "kind": "audio",
+      "role": "synthetic-test-cue",
+      "status": "ready",
+      "sourceFile": "assets/test-cue-0.25s.wav",
+      "metadata": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "durationSamples": 6000
+      },
+      "byteSize": 12044,
+      "sha256": "08b6b6691415a7f543c63addcbe74df6d6d7fd765d8e142a780ac8480414043b",
+      "provenance": "Original procedural fixture; no third-party media."
+    },
+    {
+      "id": "asset_voice_calibration",
+      "kind": "audio",
+      "role": "non-speech-calibration",
+      "status": "ready",
+      "sourceFile": "assets/voice-calibration-tone-6s.wav",
+      "metadata": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "durationSamples": 144000
+      },
+      "byteSize": 288044,
+      "sha256": "85f097bcb31bce77c5294116fceab82b1beb2842c1370cb3661abd5aac2f7c5e",
+      "provenance": "Original procedural fixture; no third-party media."
+    }
+  ]
+}
