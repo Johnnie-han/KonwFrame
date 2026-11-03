@@ -1,0 +1,34 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime data and private media (original fixtures live in examples/)
+/data/
+/storage/
+/uploads/
+/tmp/
+/renders/
+/assets/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+
+# Developer caches
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
